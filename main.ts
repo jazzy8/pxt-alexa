@@ -5,6 +5,13 @@ input.onSound(DetectedSound.Loud, function () {
     range.showColor(neopixel.colors(NeoPixelColors.Blue))
     basic.pause(10000)
     strip.clear()
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
 })
 let range: neopixel.Strip = null
 let minks = 0
